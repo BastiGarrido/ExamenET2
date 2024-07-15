@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Mensuales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Reportes Mensuales</h1>
+        <div class="list-group mb-4">
+           
+                <div class="list-group-item">
+                    <h5 class="mb-1">Reporte de Contrato</h5>
+                    <p>El/La Señor(a) {{ contrato.nombre_representante }} del Instituto {{ contrato.nombre_instituto }} viajó a {{ contrato.destino.nombre }}.</p>
+                    <p>En este viaje fueron estudiantes de nivel {{ contrato.nivel_escolar }}.</p>
+                    <p>Su viaje inició el día {{ contrato.fecha_inicio }} y termina el día {{ contrato.fecha_fin }}.</p>
+                    <p>Este viaje costó {{ contrato.monto_contrato }} y se pagará en {{ contrato.cantidad_cuotas }} cuotas.</p>
+                </div>
+           
+        </div>
+        <a href="{% url 'inicio' %}" class="btn btn-primary">Volver al Inicio</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2LcAqmnB2ow5GcT7RA1tP8NCO+RX2uGVq1W2JmxVoo" crossorigin="anonymous"></script>
+</body>
+</html>

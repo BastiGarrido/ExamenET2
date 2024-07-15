@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navegacion-personalizada">
+        <img src="{% static 'img/LogoOnTour.png' %}" class="img-fluid mx-auto d-block" alt="LogoOnTour">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link enlace" href="{% url 'inicio' %}">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace" href="{% url 'viajes' %}">Viajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace" href="{% url 'girasEscolares' %}">Giras Escolares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace" href="{% url 'registroDeUsuario' %}">Registro de Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace" href="{% url 'reportesMensuales' %}">Reportes Mensuales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link enlace" href="{% url 'registroDeContrato' %}">Registro de Contrato</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link enlace" href="{% url 'carritoDeCompra' %}">
+                        <i class="fas fa-shopping-cart"></i> Carrito
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="imagen-contenedor">
+        <img src="{% static 'img/Imagen de inicio.png' %}" class="imagen-inicio" alt="Inicio">
+        <div class="imagen-texto">Agencia de Viajes On Tour</div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-7">¡"Dulces Aventuras": Explora el Mundo con On Tour! 🍯</h1>
+                    <p class="lead">Descubre nuestras emocionantes opciones de viajes y giras escolares.</p>
+                    <hr class="my-4">
+                    <p>¡Descubre el dulce sabor de viajar con nosotros! En On Tour, 
+                        te llevamos a explorar el mundo con la misma pasión y dedicación con la que se elabora la mejor miel. 
+                        Sumérgete en experiencias únicas, saborea cada destino como si fuera un delicioso néctar y déjate envolver por la dulzura de nuestros viajes.
+                        Con nosotros,Ven y déjate llevar por el dulce encanto de viajar con On Tour, donde cada paso es un banquete para tus sentidos y cada experiencia es más dulce que la miel misma.
+                        ¡Únete a nosotros y haz de cada viaje un festín de placer y descubrimiento!</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="imagen-con-borde">
+                        <img src="{% static 'img/miel.avif' %}" class="flip-horizontal" alt="Miel">
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                    <div class="imagen-con-borde">
+                        <img src="{% static 'img/Maho_raga_rendered_5_copy.webp' %}" class="flip-horizontal" alt="Mahoraga">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <h1 class="display-7">"Sumérgete en la Adaptabilidad: Descubre la Experiencia On Tour al Estilo Mahoraga" 🥋✈️</h1>
+                    <hr class="my-6">
+                    <p>¡Explora el mundo con nosotros y descubre una experiencia de viaje diseñada para adaptarse a tus necesidades, 
+                        al igual que los emocionantes giros y movimientos del mundo a lo estilo Mahoraga! En On Tour, 
+                        te ofrecemos precios adaptables y flexibilidad para que puedas disfrutar al máximo de cada destino. 
+                        Con nosotros, cada viaje es una aventura única y personalizada que se ajusta a tu estilo y preferencias. 
+                        ¡Únete a nosotros y adaptate como Mahoraga!.</p>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="logo-contenedor">
+        <img src="{% static 'img/logoPrime.png' %}" class="img-fluid mx-auto d-block" alt="LogoPrime">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2LcAqmnB2ow5GcT7RA1tP8NCO+RX2uGVq1W2JmxVoo" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
